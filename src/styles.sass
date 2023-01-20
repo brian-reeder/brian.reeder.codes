@@ -1,0 +1,93 @@
+@font-face
+    font-family: "Red Hat Display"
+    src: url("./assets/RedHatDisplay-VariableFont_wght.ttf") format("TrueType")
+
+@font-face
+    font-family: "Red Hat Text"
+    src: url("./assets/RedHatText-VariableFont_wght.ttf") format("TrueType")
+
+@font-face
+    font-family: "Red Hat Mono"
+    src: url("./assets/RedHatMono-VariableFont_wght.ttf") format("TrueType")
+
+*,
+*::before,
+*::after
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+    --dracula-blue: #8be9fd
+    --dracula-green: #50fa7b
+    --dracula-orange: #ffb86c
+    --dracula-purple: #bd93f9
+    --dracula-red: #ff5555
+    --dracula-white: #f8f8f2
+    --dracula-yellow: #f1fa8c
+
+html
+    background: #282a36
+    background-image: repeating-linear-gradient(to bottom, #8be9fd 0 4px, #ff79c6 0 6px, transparent 1px 100%),repeating-linear-gradient(to right, #8be9fd 0 4px, #ff79c6 0 6px, transparent 1px 100%)
+    background-size: 95px 95px
+    min-height: 100vh
+    font-family: "Red Hat Text"
+    color: var(--dracula-white)
+    font-size: 16px
+
+h1,h2,h3,h4,h5,h6
+    font-family: "Red Hat Display"
+
+h1
+    font-size: 2.50rem
+
+h2
+    font-size: 2.25rem
+
+h3
+    font-size: 2.00rem
+
+h4
+    font-size: 1.75rem
+
+h5
+    font-size: 1.50rem
+
+h6
+    font-size: 1.25rem
+
+body
+    background-color: rgba(40,42,54,.75)
+    min-height: 100vh
+    
+    width: 100%
+    padding: 10px
+    display: flex
+    flex-direction: column
+
+app-root
+    width: 100%
+    height: 100%
+    flex: 1
+
+@keyframes firestrobe
+    0%,100%
+        color: var(--dracula-yellow)
+    50%
+        color: var(--dracula-orange)
+
+@keyframes coolstrobe
+    0%,50%
+        color: var(--dracula-blue)
+    25%
+        color: var(--dracula-green)
+    75%
+        color: var(--dracula-purple)
+    
+
+@keyframes bounce
+    0%,10%,20%
+        transform: rotate(0deg)
+    5%
+        transform: rotate(0.05turn)
+    15%
+        transform: rotate(-0.05turn)

@@ -1,0 +1,26 @@
+<section class="window" cdkDragBoundary="app-root" cdkDrag>
+    <section class="header" cdkDragHandle>
+        <ul class="buttons">
+            <li>
+                <a routerLink="/">
+                    <fa-icon [icon]="faCircleXmark" class="button close"></fa-icon>
+                </a>
+            </li>
+            <li>
+                <fa-icon [icon]="faCircle" class="button"></fa-icon>
+            </li>
+            <li>
+                <fa-icon [icon]="faCircle" class="button"></fa-icon>
+            </li>
+        </ul>
+        <div class="filler"></div>
+        <div class="title">
+            <h6>{{ title }}</h6>
+        </div>
+        <div class="filler"></div>
+        <div class="buttons"></div>
+    </section>
+    <section class="contents">
+        <ng-content></ng-content>
+    </section>
+</section>
