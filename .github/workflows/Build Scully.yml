@@ -68,7 +68,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-scullyio-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --force
       - name: Build with Angular
         run: ${{ steps.detect-package-manager.outputs.runner }} ng build --base-href ${{ steps.deployment.outputs.page_url }}
       - name: Static HTML export with ScullyIO
