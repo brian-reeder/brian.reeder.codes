@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Scully Files
-scully.log
+/scully.log
