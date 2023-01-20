@@ -9,7 +9,7 @@ const routes: Routes = [
   { path:'about-me', component: AboutMeComponent },
   
   { path:'404', component: PagenotfoundComponent },
-  { path:'**', redirectTo: '404' }
+  { path:'**', component: PagenotfoundComponent }
 ];
 
 @NgModule({
