@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "scully": "npx -- scully --scanRoutes",
+    "scully:serve": "npx -- scully serve"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +26,9 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@scullyio/ng-lib": "^2.1.41",
+    "@scullyio/scully": "^2.1.41",
+    "@scullyio/scully-plugin-puppeteer": "^2.1.41",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

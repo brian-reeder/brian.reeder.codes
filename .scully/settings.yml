@@ -1,0 +1,11 @@
+identifier: l3d04czdya18r2p4
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: brian.reeder.codes
+homeFolder: /home/merlin/Documents/GitHub/brian.reeder.codes
+distFolder: ./dist/brian.reeder.codes
+outDir: /home/merlin/Documents/GitHub/brian.reeder.codes/dist/static
+handle404: ''
+allowErrorCollect: true
