@@ -9,3 +9,14 @@ export const config: ScullyConfig = {
   defaultPostRenderers: [],
   routes: {},
 };
+
+const contentFolderPlugin = {
+  routes: {
+    'blog/:slug': {
+      type: 'contentFolder',
+      slug: {
+        folder: './_posts/blog',
+      },
+    },
+  },
+};

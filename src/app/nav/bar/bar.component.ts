@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { PRIMARY_OUTLET, Router, UrlSegment, UrlSegmentGroup, UrlTree } from '@angular/router';
+import { filter, tap } from 'rxjs/operators';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faFolderOpen, faFolderClosed } from '@fortawesome/free-regular-svg-icons';
 
@@ -19,12 +20,16 @@ export class BarComponent {
     "notes": faFolderClosed
   };
 
-  constructor( private route: ActivatedRoute) {}
+  constructor( private router: Router) {}
 
   ngOnInit() {
-    this.path = this.route.snapshot.routeConfig?.path as string;
-    if(this.path !== undefined && this.path in this.folders) {
-      this.folders[this.path] = faFolderOpen
+    this.path = '';
+    const url: string = this.router.url;
+    const tree: UrlTree = this.router.parseUrl(url);
+    const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
+    const s: UrlSegment[] = g?.segments ?? [];
+    if(s.length > 0) {
+      this.path = s[0].path
     }
   }
 }

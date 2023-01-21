@@ -9,6 +9,6 @@ import { faCircle, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 export class WindowComponent {
   faCircle = faCircle;
   faCircleXmark = faCircleXmark;
-
+  
   @Input() title: string = '';
 }

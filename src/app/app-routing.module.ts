@@ -9,6 +9,7 @@ const routes: Routes = [
   { path:'about-me', component: AboutMeComponent },
   
   { path:'404', component: PagenotfoundComponent },
+  { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
   { path:'**', component: PagenotfoundComponent }
 ];
 
