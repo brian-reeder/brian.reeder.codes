@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 import { faFolderOpen, faFolderClosed } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
-  selector: 'app-nav-folder',
-  templateUrl: './nav-folder.component.html',
-  styleUrls: ['./nav-folder.component.sass']
+  selector: 'nav-folder',
+  templateUrl: './folder.component.html',
+  styleUrls: ['./folder.component.sass']
 })
-export class NavFolderComponent {
+export class FolderComponent {
   folder = faFolderClosed
 
   @Input() link: string = '/';

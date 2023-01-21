@@ -4,11 +4,11 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faFolderOpen, faFolderClosed } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.sass']
+  selector: 'nav-bar',
+  templateUrl: './bar.component.html',
+  styleUrls: ['./bar.component.sass']
 })
-export class NavComponent {
+export class BarComponent {
   faFolderOpen = faFolderOpen;
   faFolderClosed = faFolderClosed;
   path?:string;

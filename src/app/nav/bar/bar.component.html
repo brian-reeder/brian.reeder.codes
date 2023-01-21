@@ -1,8 +1,8 @@
 <div>
     <div *ngIf="path?.includes('about-me'); else elseAboutMe">
-        <app-nav-folder [selected]="true">About Me</app-nav-folder>
+        <nav-folder [selected]="true">About Me</nav-folder>
     </div>
     <ng-template #elseAboutMe>
-        <app-nav-folder link="/about-me">About Me</app-nav-folder>
+        <nav-folder link="/about-me">About Me</nav-folder>
     </ng-template>
 </div>
