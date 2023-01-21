@@ -10,9 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { WindowComponent } from './window/window.component';
-import { NavComponent } from './nav/nav.component';
-import { NavFolderComponent } from './nav-folder/nav-folder.component';
-
+import { NavModule } from './nav/nav.module';
 
 @NgModule({
   declarations: [
@@ -20,16 +18,15 @@ import { NavFolderComponent } from './nav-folder/nav-folder.component';
     HomeComponent,
     PagenotfoundComponent,
     WindowComponent,
-    NavComponent,
     AboutMeComponent,
-    NavFolderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DragDropModule,
     FontAwesomeModule,
-    ScullyLibModule
+    ScullyLibModule,
+    NavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
