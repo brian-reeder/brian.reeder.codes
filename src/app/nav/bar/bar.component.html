@@ -11,4 +11,10 @@
     <ng-template #elseBlog>
         <nav-folder link="/blog">Blog</nav-folder>
     </ng-template>
+    <div *ngIf="path?.includes('notes'); else elseNotes">
+        <nav-folder [selected]="true">Notes</nav-folder>
+    </div>
+    <ng-template #elseNotes>
+        <nav-folder link="/notes">Notes</nav-folder>
+    </ng-template>
 </div>

@@ -3,14 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npx -- scully serve",
     "build": "ng build && npx -- scully --scanRoutes",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "scully": "npx -- scully --scanRoutes",
-    "scully.serve": "npx -- scully serve",
-    "scully.deploy": "npm run build && npm run scully && npm run scully.serve",
-    "build:digitalOcean": "npm ci --include=dev --force"
+    "scully": "npx -- scully --scanRoutes"
   },
   "private": true,
   "dependencies": {
