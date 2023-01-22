@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
-import { Observable } from 'rxjs';
+import { Observable, map,  } from 'rxjs';
 
 @Component({
   selector: 'app-blog',
@@ -9,14 +9,25 @@ import { Observable } from 'rxjs';
   styleUrls: ['./blog.component.sass']
 })
 export class BlogComponent implements OnInit {
-  links$: Observable<ScullyRoute[]> = this.scully.available$;
+  links$: Observable<ScullyRoute[]>; 
+  //= this.scully.available$.subscribe((links) => {
+  //  links.filter(link => link.route.startsWith('/blog'));
+  //});
 
-  constructor( private scully: ScullyRoutesService ) {}
+  constructor( private scully: ScullyRoutesService ) {
+    this.links$ = this.scully.available$.pipe(
+      map(links => links
+        .filter(link => link.route.startsWith('/blog/'))
+        .sort((a, b) => b['date'].localeCompare(a['date']))
+      )
+    );
+  }
 
   ngOnInit(): void {
     // debug current pages
+    let count = 0;
     this.links$.subscribe((links) => {
-      console.log(links);
+      console.log(links)
     });
   }
 }

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { faCircle, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faCircleChevronLeft, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-window',
@@ -9,6 +9,9 @@ import { faCircle, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 export class WindowComponent {
   faCircle = faCircle;
   faCircleXmark = faCircleXmark;
+  faCircleChevronLeft = faCircleChevronLeft;
   
   @Input() title: string = '';
+  @Input() hrefBack: string = '';
+  @Input() hrefClose: string = '';
 }
