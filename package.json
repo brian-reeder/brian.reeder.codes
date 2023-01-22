@@ -29,6 +29,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@scullyio/ng-lib": "^2.1.41",
     "@scullyio/scully": "^2.1.41",
+    "@scullyio/scully-plugin-playwright": "^2.1.41",
     "@scullyio/scully-plugin-puppeteer": "^2.1.41",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
