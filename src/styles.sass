@@ -64,6 +64,19 @@ body
     display: flex
     flex-direction: column
 
+ol,
+ul
+    list-style-position: inside
+
+
+body.dark-theme
+    --txt-01: #f2f2f2
+    --txt-02: #6272a4
+    --txt-code: var(--dracula-purple)
+    --link: var(--dracula-yellow)
+
+a
+    color: var(--link)
 app-root
     width: 100%
     height: 100%

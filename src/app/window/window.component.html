@@ -1,17 +1,24 @@
 <section class="window" cdkDragBoundary="app-root" cdkDrag>
     <section class="header" cdkDragHandle>
         <menu class="buttons">
-            <li>
+            <li *ngIf="hrefClose !== ''; else elseButton">
                 <a routerLink="/">
                     <fa-icon [icon]="faCircleXmark" class="button close"></fa-icon>
+                </a>
+            </li>
+            <li *ngIf="hrefBack !== ''; else elseButton">
+                <a [routerLink]="hrefBack">
+                    <fa-icon [icon]="faCircleChevronLeft" class="button back"></fa-icon>
                 </a>
             </li>
             <li>
                 <fa-icon [icon]="faCircle" class="button"></fa-icon>
             </li>
-            <li>
-                <fa-icon [icon]="faCircle" class="button"></fa-icon>
-            </li>
+            <ng-template #elseButton>
+                <li>
+                    <fa-icon [icon]="faCircle" class="button"></fa-icon>
+                </li>
+            </ng-template>
         </menu>
         <div class="filler"></div>
         <div class="title">

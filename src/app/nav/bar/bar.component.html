@@ -5,4 +5,10 @@
     <ng-template #elseAboutMe>
         <nav-folder link="/about-me">About Me</nav-folder>
     </ng-template>
+    <div *ngIf="path?.includes('blog'); else elseBlog">
+        <nav-folder [selected]="true">Blog</nav-folder>
+    </div>
+    <ng-template #elseBlog>
+        <nav-folder link="/blog">Blog</nav-folder>
+    </ng-template>
 </div>

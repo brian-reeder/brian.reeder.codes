@@ -67,8 +67,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Angular
         run: ${{ steps.detect-package-manager.outputs.runner }} ng build --base-href ${{ steps.deployment.outputs.page_url }}
-#      - name: Static HTML export with ScullyIO
-#        run: ${{ steps.detect-package-manager.outputs.runner }} scully --scanRoutes
+      - name: Static HTML export with ScullyIO
+        run: ${{ steps.detect-package-manager.outputs.runner }} scully --scanRoutes
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

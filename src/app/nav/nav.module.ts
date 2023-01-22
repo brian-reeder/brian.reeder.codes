@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BarComponent } from './bar/bar.component';
 import { FolderComponent } from './folder/folder.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { AppRoutingModule } from '../app-routing.module';
+import { NavRoutingModule } from './nav-routing.module';
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import { AppRoutingModule } from '../app-routing.module';
     FolderComponent
   ],
   imports: [
-    AppRoutingModule,
+    NavRoutingModule,
     CommonModule,
     FontAwesomeModule
   ],
