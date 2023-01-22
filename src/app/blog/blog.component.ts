@@ -25,9 +25,10 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     // debug current pages
-    let count = 0;
+    /*
     this.links$.subscribe((links) => {
       console.log(links)
     });
+    */
   }
 }
