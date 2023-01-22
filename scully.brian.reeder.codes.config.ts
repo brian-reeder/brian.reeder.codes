@@ -1,15 +1,12 @@
-import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
-import { baseHrefRewrite } from '@scullyio/scully-plugin-base-href-rewrite';
+import { ScullyConfig } from '@scullyio/scully';
 import '@scullyio/scully-plugin-puppeteer';
-
-setPluginConfig(baseHrefRewrite, 'https://brian-reeder.github.io/brian.reeder.codes/');
 
 export const config: ScullyConfig = {
   projectRoot: './src',
   projectName: 'brian.reeder.codes',
   distFolder: './dist/brian.reeder.codes', // output directory of your Angular build artifacts
   outDir: './dist/static', // directory for scully build artifacts
-  defaultPostRenderers: [baseHrefRewrite],
+  defaultPostRenderers: [],
   routes: {
     '/blog/:slug': {
       type: 'contentFolder',
