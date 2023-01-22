@@ -1,4 +1,5 @@
-<div>
+<ul>
+<!--
     <div *ngIf="path?.includes('about-me'); else elseAboutMe">
         <nav-folder [selected]="true">About Me</nav-folder>
     </div>
@@ -11,4 +12,21 @@
     <ng-template #elseBlog>
         <nav-folder link="/blog">Blog</nav-folder>
     </ng-template>
-</div>
+    <div *ngIf="path?.includes('notes'); else elseNotes">
+        <nav-folder [selected]="true">Notes</nav-folder>
+    </div>
+    <ng-template #elseNotes>
+        <nav-folder link="/notes">Notes</nav-folder>
+    </ng-template>
+-->
+    <li *ngFor="let page of pages">
+        <div *ngIf="!path?.includes(page['path']); else elseFolder">
+            <nav-folder link="/{{page['path']}}">{{ page['title'] }}</nav-folder>
+        </div>
+        <ng-template #elseFolder>
+            <div>
+                <nav-folder [selected]="true">{{ page['title'] }}</nav-folder>            
+            </div>
+        </ng-template>
+    </li>
+</ul>

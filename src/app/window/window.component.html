@@ -1,4 +1,5 @@
-<section class="window" cdkDragBoundary="app-root" cdkDrag>
+<div id="window-boundary">
+<section class="window" cdkDragBoundary="#window-boundary" cdkDrag>
     <section class="header" cdkDragHandle>
         <menu class="buttons">
             <li *ngIf="hrefClose !== ''; else elseButton">
@@ -31,3 +32,4 @@
         <ng-content></ng-content>
     </section>
 </section>
+</div>

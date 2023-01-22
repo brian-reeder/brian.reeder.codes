@@ -4,21 +4,17 @@ import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
 import { Observable, map,  } from 'rxjs';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.sass']
+  selector: 'app-notes',
+  templateUrl: './notes.component.html',
+  styleUrls: ['./notes.component.sass']
 })
-export class BlogComponent implements OnInit {
+export class NotesComponent implements OnInit {
   links$: Observable<ScullyRoute[]>; 
-  //= this.scully.available$.subscribe((links) => {
-  //  links.filter(link => link.route.startsWith('/blog'));
-  //});
 
   constructor( private scully: ScullyRoutesService ) {
     this.links$ = this.scully.available$.pipe(
       map(links => links
-        .filter(link => link.route.startsWith('/blog/'))
-        .sort((a, b) => b['date'].localeCompare(a['date']))
+        .filter(link => link.route.startsWith('/notes/'))
       )
     );
   }

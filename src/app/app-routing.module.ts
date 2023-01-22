@@ -7,9 +7,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 const routes: Routes = [
   { path:'', component: HomeComponent },
   { path:'about-me', component: AboutMeComponent },
-  
-  { path:'404', component: PagenotfoundComponent },
   { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
+  { path: 'notes', loadChildren: () => import('./notes/notes.module').then(m => m.NotesModule) },
+  { path:'404', component: PagenotfoundComponent },
   { path:'**', component: PagenotfoundComponent }
 ];
 
