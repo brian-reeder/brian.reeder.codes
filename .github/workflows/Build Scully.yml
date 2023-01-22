@@ -66,7 +66,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Angular
-        run: ${{ steps.detect-package-manager.outputs.runner }} ng build --base-href ${{ steps.deployment.outputs.page_url }}
+        run: ${{ steps.detect-package-manager.outputs.runner }} ng build
       - name: Static HTML export with ScullyIO
         run: ${{ steps.detect-package-manager.outputs.runner }} scully --scanRoutes
       - name: Upload artifact
