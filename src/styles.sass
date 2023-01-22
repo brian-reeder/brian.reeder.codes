@@ -1,14 +1,15 @@
 @font-face
     font-family: "Red Hat Display"
     src: url("./assets/RedHatDisplay-VariableFont_wght.ttf") format("TrueType")
-
+    font-display: swap
 @font-face
     font-family: "Red Hat Text"
     src: url("./assets/RedHatText-VariableFont_wght.ttf") format("TrueType")
-
+    font-display: swap
 @font-face
     font-family: "Red Hat Mono"
     src: url("./assets/RedHatMono-VariableFont_wght.ttf") format("TrueType")
+    font-display: swap
 
 *,
 *::before,
@@ -25,17 +26,21 @@
     --dracula-white: #f8f8f2
     --dracula-yellow: #f1fa8c
 
+    --text-font-family: "Red Hat Text", Georgia, 'Times New Roman', Times, serif
+    --heading-font-family: "Red Hat Display", Verdana, Geneva, Tahoma, sans-serif
+    --mono-font-family: "Red Hata Mono", 'Courier New', Courier, monospace
+
 html
     background: #282a36
     background-image: repeating-linear-gradient(to bottom, #8be9fd 0 4px, #ff79c6 0 6px, transparent 1px 100%),repeating-linear-gradient(to right, #8be9fd 0 4px, #ff79c6 0 6px, transparent 1px 100%)
     background-size: 95px 95px
     min-height: 100vh
-    font-family: "Red Hat Text"
+    font-family: var(--text-font-family)
     color: var(--dracula-white)
     font-size: 16px
 
 h1,h2,h3,h4,h5,h6
-    font-family: "Red Hat Display"
+    font-family: var(--heading-font-family)
 
 h1
     font-size: 2.50rem

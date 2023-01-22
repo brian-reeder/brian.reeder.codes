@@ -4,8 +4,8 @@ staticPort: 1668
 reloadPort: 2667
 hostName: localhost
 projectName: brian.reeder.codes
-homeFolder: /home/merlin/Documents/GitHub/brian.reeder.codes
+homeFolder: /home/caridin/Documents/GitHub/brian.reeder.codes
 distFolder: ./dist/brian.reeder.codes
-outDir: /home/merlin/Documents/GitHub/brian.reeder.codes/dist/static
+outDir: /home/caridin/Documents/GitHub/brian.reeder.codes/dist/static
 handle404: ''
 allowErrorCollect: true
