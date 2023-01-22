@@ -10,7 +10,7 @@
     "scully": "npx -- scully --scanRoutes",
     "scully.serve": "npx -- scully serve",
     "scully.deploy": "npm run build && npm run scully && npm run scully.serve",
-    "build:digitalOcean": "npm ci --include=dev"
+    "build:digitalOcean": "npm ci --include=dev --force"
   },
   "private": true,
   "dependencies": {
