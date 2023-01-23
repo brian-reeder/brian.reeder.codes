@@ -1,5 +1,8 @@
-name: Build and Deploy2
-on: [push]
+name: Build and Deploy
+on:
+  push:
+    branches: ["main"]
+
 permissions:
   contents: write
 jobs:
