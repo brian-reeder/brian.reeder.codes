@@ -1,31 +1,16 @@
-article
-    display: flex
-    flex-direction: column
-    gap: 10px
-
-h2,
-hr
+h2,hr
     color: #50fa7b
     border-color: #50fa7b
 
-.note-container > ul
+.notes > ul
     list-style: none
-
-p
-    margin-top: 10px
-
-ul
     display: flex
     flex-wrap: wrap
     gap: 10px
-
-ul > li
-    max-width: 370px
-    min-width: 200px
-
+    > li
+        width: 370px
+        > *
+            margin: 0.75em 0
+    
 pre
     white-space: pre-wrap
-    margin-top: 10px
-  
-code 
-    color: var(--txt-code)

@@ -9,14 +9,12 @@ import { NotesComponent } from './notes.component';
 import { NavModule } from '../nav/nav.module';
 import { WindowModule } from '../window/window.module';
 import { NotesTemplateComponent } from './notes-template/notes-template.component';
-import { CardComponent } from './card/card.component';
 
 
 @NgModule({
   declarations: [
     NotesComponent,
-    NotesTemplateComponent,
-    CardComponent
+    NotesTemplateComponent
   ],
   imports: [
     CommonModule,

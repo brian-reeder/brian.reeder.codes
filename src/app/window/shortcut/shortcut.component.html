@@ -1,0 +1,9 @@
+<a [routerLink]="Post.route">
+    <article class="card">
+        <fa-icon [icon]="faFileLines"></fa-icon>
+        <div>
+            <p>{{ Post[titleSelector] }}</p>
+            <p class="description">{{ Post[descriptionSelector] }}</p>
+        </div>
+    </article>
+</a>

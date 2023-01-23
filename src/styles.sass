@@ -28,9 +28,9 @@
 
     --hover-shadow: 2px 2px 5px #282a36, -2px 2px 5px #282a36, 2px -2px 5px #282a36, -2px -2px 5px #282a36
 
-    --text-font-family: "Red Hat Text", Verdana, Geneva, Tahoma, sans-serif
     --heading-font-family: "Red Hat Display", Verdana, Geneva, Tahoma, sans-serif
-    --mono-font-family: "Red Hata Mono", 'Courier New', Courier, monospace
+    --text-font-family:    "Red Hat Text", Verdana, Geneva, Tahoma, sans-serif
+    --mono-font-family:    "Red Hat Mono",'' 'Courier New', Courier, monospace
 
 html
     background: #282a36
@@ -40,6 +40,14 @@ html
     font-family: var(--text-font-family)
     color: var(--dracula-white)
     font-size: 100%
+
+body.dark-theme
+    --txt-01: #f2f2f2
+    --txt-02: #6272a4
+    --txt-code: var(--dracula-purple)
+
+    --link:       var(--dracula-yellow)
+    --link-hover: var(--dracula-orange)
 
 h1,h2,h3,h4,h5,h6
     font-family: var(--heading-font-family)
@@ -60,17 +68,16 @@ ol,
 ul
     list-style-position: inside
 
-
-body.dark-theme
-    --txt-01: #f2f2f2
-    --txt-02: #6272a4
-    --txt-code: var(--dracula-purple)
-    --link: var(--dracula-yellow)
+code 
+    color: var(--txt-code)
+    font-family: var(--mono-font-family)
 
 a
     color: var(--link)
     text-decoration: none
     font-weight: 700
+a:hover
+    color: var(--link-hover)
     
 app-root
     width: 100%
@@ -86,22 +93,6 @@ app-root
 
 ::-webkit-scrollbar-thumb:hover
     background: #BD93F9
-
-
-@keyframes firestrobe
-    0%,100%
-        color: var(--dracula-yellow)
-    50%
-        color: var(--dracula-orange)
-
-@keyframes coolstrobe
-    0%,50%
-        color: var(--dracula-blue)
-    25%
-        color: var(--dracula-green)
-    75%
-        color: var(--dracula-purple)
-    
 
 @keyframes twitch
     0%,10%,20%

@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let page of pages | async">
+        <win-shortcut
+            [Post]="page"
+            [titleSelector]="titleSelector"
+            [descriptionSelector]="descriptionSelector"
+        ></win-shortcut>
+    </li>
+</ul>
