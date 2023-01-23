@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { faFolderOpen, faFolderClosed } from '@fortawesome/free-regular-svg-icons';
+import { faFilePdf, faFolder } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'nav-folder',
@@ -17,5 +18,13 @@ export class FolderComponent {
       this.link = '/';
       this.folder = faFolderOpen;
     }
+  }
+
+  setFolderOpen() {
+    this.folder = faFolderOpen
+  }
+
+  setFolderClosed() {
+    this.folder = faFolderClosed
   }
 }

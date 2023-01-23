@@ -1,4 +1,12 @@
-<a [routerLink]="[link]" [class.selected]="selected == true">
+<a 
+    [routerLink]="[link]" 
+    class="shortcut"
+    [class.selected]="selected"
+    (mouseover)="!selected && setFolderOpen()"
+    (mouseleave)="!selected && setFolderClosed()"
+>
     <fa-icon [icon]="folder"></fa-icon>
-    <ng-content></ng-content>
+    <span>
+        <ng-content></ng-content>
+    </span>
 </a>

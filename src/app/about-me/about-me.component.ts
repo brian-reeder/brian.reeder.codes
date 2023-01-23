@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,4 +12,9 @@ export class AboutMeComponent {
   faGithubSquare = faGithubSquare;
   faLinkedin = faLinkedin;
   faSquareEnvelope = faSquareEnvelope;
+
+  constructor(private meta: Meta) {
+    meta.addTag({ name: 'description', content:'Everything to know about Brian.' })
+  }
+
 }
