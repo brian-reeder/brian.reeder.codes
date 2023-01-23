@@ -9,14 +9,11 @@ import { BlogComponent } from './blog.component';
 import { NavModule } from '../nav/nav.module';
 import { WindowModule } from '../window/window.module';
 import { BlogTemplateComponent } from './blog-template/blog-template.component';
-import { CardComponent } from './card/card.component';
-
 
 @NgModule({
   declarations: [
     BlogComponent,
-    BlogTemplateComponent,
-    CardComponent
+    BlogTemplateComponent
   ],
   imports: [
     CommonModule,

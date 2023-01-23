@@ -1,8 +1,8 @@
 <nav-bar></nav-bar>
 <app-window title="Notes Home" hrefClose="/">
-    <ul>
-        <li *ngFor="let pages of links$ | async">
-            <blog-card [Post]=pages ></blog-card>
-        </li>
-    </ul>
+    <win-directory 
+        [pages]="links$"
+        titleSelector="title"
+        descriptionSelector="description"
+    ></win-directory>
 </app-window>
