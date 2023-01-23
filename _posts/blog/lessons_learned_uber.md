@@ -1,6 +1,7 @@
 ---
 title: "Lesson's Learned: Uber"
 date: "2022-09-30"
+meta: "Uber has been hacked! What can we learn from this?"
 published: true
 ---
 # Lesson's Learned: Uber

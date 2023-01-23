@@ -1,6 +1,8 @@
 ---
 title: 'CheatSheet: nmap'
 description: 'List scanned hosts and enumerate identified services.'
+meta: "Common uses and flags for nmap."
+published: true
 ---
 - ## CheatSheet: nmap
 	---

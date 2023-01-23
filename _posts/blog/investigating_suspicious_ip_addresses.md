@@ -1,6 +1,7 @@
 ---
 title: "Investigating Suspicious IP Addresses"
 date: "2023-01-17"
+meta: "Where to begin investigating security incidents from a known malicious IP."
 published: true
 ---
 # Investigating Suspicious IP Addresses

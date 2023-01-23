@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,7 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 export class NotesTemplateComponent {
   slug: string = ''; 
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private meta: Meta, private route: ActivatedRoute) {
+    meta.addTag({ name: 'description', content:'Notes and quick references for my favorite tools.' });
+    
     this.slug = this.route.snapshot.paramMap.get('slug') as string;
   }
 }

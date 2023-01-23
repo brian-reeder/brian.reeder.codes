@@ -1,6 +1,8 @@
 ---
 title: 'CheatSheet: networking'
 description: 'Common TCP/UDP ports, reserved IP spaces, and more!'
+meta: "A short summary of useful networking facts."
+published: true
 ---
 - ## CheatSheet: networking
 	---

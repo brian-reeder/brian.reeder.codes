@@ -1,5 +1,5 @@
 <div id="window-boundary"></div>
-<section class="window" cdkDragBoundary="body" cdkDrag>
+<div class="window" cdkDragBoundary="body" cdkDrag>
     <section class="header" cdkDragHandle>
         <menu class="buttons">
             <li *ngIf="hrefClose !== ''; else elseButton">
@@ -22,13 +22,11 @@
             </ng-template>
         </menu>
         <div class="filler"></div>
-        <div class="title">
-            <h6>{{ title }}</h6>
-        </div>
+        <span class="title">{{ title }}</span>
         <div class="filler"></div>
         <div class="buttons"></div>
     </section>
-    <section class="contents">
+    <main class="contents">
         <ng-content></ng-content>
-    </section>
-</section>
+    </main>
+</div>

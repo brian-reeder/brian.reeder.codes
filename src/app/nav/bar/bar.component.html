@@ -1,4 +1,4 @@
-<ul>
+<ul class="flex-container">
 <!--
     <div *ngIf="path?.includes('about-me'); else elseAboutMe">
         <nav-folder [selected]="true">About Me</nav-folder>
@@ -20,13 +20,10 @@
     </ng-template>
 -->
     <li *ngFor="let page of pages">
-        <div *ngIf="!path?.includes(page['path']); else elseFolder">
-            <nav-folder link="/{{page['path']}}">{{ page['title'] }}</nav-folder>
-        </div>
+            <nav-folder *ngIf="!path?.includes(page['path']); else elseFolder"
+             link="/{{page['path']}}">{{ page['title'] }}</nav-folder>
         <ng-template #elseFolder>
-            <div>
                 <nav-folder [selected]="true">{{ page['title'] }}</nav-folder>            
-            </div>
         </ng-template>
     </li>
 </ul>

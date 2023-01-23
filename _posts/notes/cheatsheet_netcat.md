@@ -1,6 +1,8 @@
 ---
 title: 'CheatSheet: netcat'
 description: 'Arbitrary TCP and UDP connections and listens.'
+meta: "Common uses and flags for netcat"
+published: true
 ---
 - ## CheatSheet: netcat
 	---

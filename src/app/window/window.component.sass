@@ -23,70 +23,66 @@ $bg2: rgba(68,71,90, 0.8)
     bottom: 0
     z-index: 1
 
-    .header
-        height: 30px
-        cursor: grab
-        display: flex
-        align-items: center
-        align-content: center
-        justify-content: center
+.header
+    height: 30px
+    cursor: grab
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: center
 
-        .title
-            padding: 2px 1em
-            height: 1.75rem
-            
-            background-color: rgba(68,71,90, 0.8)
-            border-radius: 20px
-            display: flex
-            align-items: center
-            justify-content: center
+.title
+    padding: 2px 1em
+    font-size: 1.15em
+    font-weight: normal
+    background-color: rgba(68,71,90)
+    border-radius: 20px
+    display: flex
+    align-items: center
+    justify-content: center
 
-            h6
-                font-family: "Red Hat Display"
-                font-weight: normal
+.buttons
+    min-width: 5.50rem
 
-        .buttons
-            min-width: 5.50rem
-
-        menu.buttons
-            list-style: none
-            line-height: 80%
-            display: flex
-            gap: 0.40rem
-            
-            align-items: center
-            justify-content: center
-            background-color: rgba(68,71,90, 0.8)
-            border-radius: 20px
-            padding: 0.35rem
-
-            .button
-                color: rgba(98,114,164, 0.75)
-                font-size: 1.15rem
-
-            .close.button
-                color: rgba(255,85,85, 0.75)
-                cursor: pointer
-            
-            .close.button:hover
-                color: rgba(255,125,85, 0.75)
-
-            .back.button
-                color: rgba(241, 250, 140, 0.75)
-                cursor: pointer
-
-            .back.button:hover
-                color: rgba(255, 250, 200, 0.75)
-
-    .filler
-        flex: 1
+menu.buttons
+    list-style: none
+    line-height: 80%
+    display: flex
+    gap: 0.40rem
     
-    .contents
-        background-color: rgba(68,71,90, 0.8)
-        flex: 1
-        border-radius: 10px
-        padding: 10px
-        overflow: auto
+    align-items: center
+    justify-content: center
+    background-color: rgba(68,71,90)
+    border-radius: 20px
+    padding: 0.35rem
+
+.button
+    color: rgba(98,114,164, 0.75)
+    font-size: 1.15rem
+
+.close.button
+    color: rgba(255,85,85, 0.75)
+    cursor: pointer
+
+.close.button:hover
+    color: rgba(255,125,85, 0.75)
+
+.back.button
+    color: rgba(241, 250, 140, 0.75)
+    cursor: pointer
+
+.back.button:hover
+    color: rgba(255, 250, 200, 0.75)
+
+.filler
+    flex: 1
+
+.contents
+    background-color: rgba(68,71,90)
+    flex: 1
+    border-radius: 10px
+    padding: 10px
+    overflow: auto
 
 
 @media(min-height: 600px)
