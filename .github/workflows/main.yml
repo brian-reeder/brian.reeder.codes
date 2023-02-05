@@ -17,8 +17,8 @@ jobs:
           npm ci
           npm run build
 
-      - name: Deploy to gh-pages
+      - name: Deploy to build
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
+          branch: build
           folder: dist/static # The folder the action should deploy.
