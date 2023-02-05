@@ -1,0 +1,855 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Scully 0.0.0">
+  <meta charset="utf-8">
+  <title>@brian-reeder</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preload" as="font" href="/assets/RedHatText-VariableFont_wght.ttf" type="font/ttf" crossorigin="">
+  <link rel="preload" as="font" href="/assets/RedHatDisplay-VariableFont_wght.ttf" type="font/ttf" crossorigin="">
+  <link rel="preload" as="font" href="/assets/RedHatMono-VariableFont_wght.ttf" type="font/ttf" crossorigin="">
+<style>@font-face{font-family:Red Hat Display;src:url(/assets/RedHatDisplay-VariableFont_wght.ttf) format("TrueType");font-display:optional}@font-face{font-family:Red Hat Text;src:url(/assets/RedHatText-VariableFont_wght.ttf) format("TrueType");font-display:optional}@font-face{font-family:Red Hat Mono;src:url(/assets/RedHatMono-VariableFont_wght.ttf) format("TrueType");font-display:optional}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;--dracula-blue:#8be9fd;--dracula-green:#50fa7b;--dracula-orange:#ffb86c;--dracula-purple:#bd93f9;--dracula-red:#ff5555;--dracula-white:#f8f8f2;--dracula-yellow:#f1fa8c;--hover-shadow:2px 2px 5px #282a36, -2px 2px 5px #282a36, 2px -2px 5px #282a36, -2px -2px 5px #282a36;--heading-font-family:"Red Hat Display", Verdana, Geneva, Tahoma, sans-serif;--text-font-family:"Red Hat Text", Verdana, Geneva, Tahoma, sans-serif;--mono-font-family:"Red Hat Mono","" "Courier New", Courier, monospace}html{background:#282a36;background-image:repeating-linear-gradient(to bottom,#8be9fd 0 4px,#ff79c6 0 6px,transparent 1px 100%),repeating-linear-gradient(to right,#8be9fd 0 4px,#ff79c6 0 6px,transparent 1px 100%);background-size:95px 95px;min-height:100vh;font-family:var(--text-font-family);color:var(--dracula-white);font-size:100%}body.dark-theme{--txt-01:#f2f2f2;--txt-02:#6272a4;--txt-code:var(--dracula-purple);--link:var(--dracula-yellow);--link-hover:var(--dracula-orange)}body{background-color:#282a36bf;min-height:100vh;width:100%;padding:10px;display:flex;flex-direction:column}app-root{width:100%;height:100%;flex:1}</style><link rel="stylesheet" href="styles.cbe38f37f04710a0.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.cbe38f37f04710a0.css"></noscript><style>.darkmode[_ngcontent-myu-c17]{--text-01: #f8f8f2}</style><style>h2[_ngcontent-myu-c21], hr[_ngcontent-myu-c21]{color:#50fa7b;border-color:#50fa7b}.notes[_ngcontent-myu-c21] > ul[_ngcontent-myu-c21]{list-style:none;display:flex;flex-wrap:wrap;gap:10px}.notes[_ngcontent-myu-c21] > ul[_ngcontent-myu-c21] > li[_ngcontent-myu-c21]{width:370px}.notes[_ngcontent-myu-c21] > ul[_ngcontent-myu-c21] > li[_ngcontent-myu-c21] > *[_ngcontent-myu-c21]{margin:.75em 0}pre[_ngcontent-myu-c21]{white-space:pre-wrap}</style><meta name="description" content="Notes and quick references for my favorite tools."><style>.flex-container[_ngcontent-myu-c10]{display:flex;flex-flow:column wrap;align-content:flex-start}ul.flex-container[_ngcontent-myu-c10]{list-style:none;gap:10px}li[_ngcontent-myu-c10]{min-height:80px;min-width:80px}</style><style>.window[_ngcontent-myu-c13]{width:800px;height:600px;padding:5px;border-radius:10px;background-color:#282a36d9;box-shadow:2px 2px 10px #000;display:flex;flex-direction:column;gap:10px;position:absolute;margin:auto;inset:0;z-index:1}.header[_ngcontent-myu-c13]{height:30px;cursor:grab;display:flex;align-items:center;align-content:center;justify-content:center}.title[_ngcontent-myu-c13]{padding:2px 1em;font-size:1.15em;font-weight:400;background-color:#44475a;border-radius:20px;display:flex;align-items:center;justify-content:center}.buttons[_ngcontent-myu-c13]{min-width:5.5rem}menu.buttons[_ngcontent-myu-c13]{list-style:none;line-height:80%;display:flex;gap:.4rem;align-items:center;justify-content:center;background-color:#44475a;border-radius:20px;padding:.35rem}.button[_ngcontent-myu-c13]{color:#6272a4bf;font-size:1.15rem}.close.button[_ngcontent-myu-c13]{color:#ff5555bf;cursor:pointer}.close.button[_ngcontent-myu-c13]:hover{color:#ff7d55bf}.back.button[_ngcontent-myu-c13]{color:#f1fa8cbf;cursor:pointer}.back.button[_ngcontent-myu-c13]:hover{color:#fffac8bf}.filler[_ngcontent-myu-c13]{flex:1}.contents[_ngcontent-myu-c13]{background-color:#44475a;flex:1;border-radius:10px;padding:10px;overflow:auto}@media (min-height: 600px){.window[_ngcontent-myu-c13]{height:600px}}@media (min-width: 800px){.window[_ngcontent-myu-c13]{width:800px}.window[_ngcontent-myu-c13]   .title[_ngcontent-myu-c13]{min-width:10rem}}@media (max-width: 800px) and (min-width: 400px){.window[_ngcontent-myu-c13]{width:400px}}@media (max-height: 600px) and (min-height: 400px){.window[_ngcontent-myu-c13]{height:400px}}@media (max-width: 400px){.window[_ngcontent-myu-c13]{width:100%;height:100%}.window[_ngcontent-myu-c13]   .buttons[_ngcontent-myu-c13]{min-width:5px}}@media (max-height: 400px){.window[_ngcontent-myu-c13]{width:100%;height:100%}.window[_ngcontent-myu-c13]   .buttons[_ngcontent-myu-c13]{min-width:5px}}</style><style>
+      :host {
+        display: none;
+      }
+      scully-content {
+        display: none;
+      }
+    </style><style>a.shortcut[_ngcontent-myu-c9]{text-decoration:none;font-weight:400}.shortcut.selected[_ngcontent-myu-c9]{color:var(--dracula-green)}.shortcut[_ngcontent-myu-c9]{background-color:#44475acc;color:var(--txt-01);padding:5px;border-radius:8px;display:flex;flex-direction:column;align-items:center}.shortcut[_ngcontent-myu-c9]:hover{box-shadow:var(--hover-shadow);transform:translate(5px)}fa-icon[_ngcontent-myu-c9]{font-size:2rem}</style><script>window['ScullyIO']='generated';</script></head>
+<body class="dark-theme" scully-version="0.0.0">
+  <app-root _nghost-myu-c17="" ng-version="15.1.1"><router-outlet _ngcontent-myu-c17="" class="darkmode"></router-outlet><app-notes-template _nghost-myu-c21=""><nav-bar _ngcontent-myu-c21="" _nghost-myu-c10=""><ul _ngcontent-myu-c10="" class="flex-container"><li _ngcontent-myu-c10=""><nav-folder _ngcontent-myu-c10="" _nghost-myu-c9=""><a _ngcontent-myu-c9="" class="shortcut" href="/about-me"><fa-icon _ngcontent-myu-c9="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="folder-closed" class="svg-inline--fa fa-folder-closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 96h-172.1L226.7 50.75C214.7 38.74 198.5 32 181.5 32H64C28.65 32 0 60.66 0 96v320c0 35.34 28.65 64 64 64h384c35.35 0 64-28.66 64-64V160C512 124.7 483.3 96 448 96zM64 80h117.5c4.273 0 8.293 1.664 11.31 4.688L256 144h192c8.822 0 16 7.176 16 16v32h-416V96C48 87.18 55.18 80 64 80zM448 432H64c-8.822 0-16-7.176-16-16V240h416V416C464 424.8 456.8 432 448 432z"></path></svg></fa-icon><span _ngcontent-myu-c9="">About Me</span></a></nav-folder><!----><!----></li><li _ngcontent-myu-c10=""><nav-folder _ngcontent-myu-c10="" _nghost-myu-c9=""><a _ngcontent-myu-c9="" class="shortcut" href="/blog"><fa-icon _ngcontent-myu-c9="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="folder-closed" class="svg-inline--fa fa-folder-closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 96h-172.1L226.7 50.75C214.7 38.74 198.5 32 181.5 32H64C28.65 32 0 60.66 0 96v320c0 35.34 28.65 64 64 64h384c35.35 0 64-28.66 64-64V160C512 124.7 483.3 96 448 96zM64 80h117.5c4.273 0 8.293 1.664 11.31 4.688L256 144h192c8.822 0 16 7.176 16 16v32h-416V96C48 87.18 55.18 80 64 80zM448 432H64c-8.822 0-16-7.176-16-16V240h416V416C464 424.8 456.8 432 448 432z"></path></svg></fa-icon><span _ngcontent-myu-c9="">Blog</span></a></nav-folder><!----><!----></li><li _ngcontent-myu-c10=""><nav-folder _ngcontent-myu-c10="" _nghost-myu-c9=""><a _ngcontent-myu-c9="" class="shortcut selected" href="/"><fa-icon _ngcontent-myu-c9="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="folder-open" class="svg-inline--fa fa-folder-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M572.6 270.3l-96 192C471.2 473.2 460.1 480 447.1 480H64c-35.35 0-64-28.66-64-64V96c0-35.34 28.65-64 64-64h117.5c16.97 0 33.25 6.742 45.26 18.75L275.9 96H416c35.35 0 64 28.66 64 64v32h-48V160c0-8.824-7.178-16-16-16H256L192.8 84.69C189.8 81.66 185.8 80 181.5 80H64C55.18 80 48 87.18 48 96v288l71.16-142.3C124.6 230.8 135.7 224 147.8 224h396.2C567.7 224 583.2 249 572.6 270.3z"></path></svg></fa-icon><span _ngcontent-myu-c9="">Notes</span></a></nav-folder><!----><!----></li><!----></ul></nav-bar><app-window _ngcontent-myu-c21="" title="Notes" hrefclose="/" hrefback="/notes" _nghost-myu-c13=""><div _ngcontent-myu-c13="" id="window-boundary"></div><div _ngcontent-myu-c13="" cdkdragboundary="body" cdkdrag="" class="cdk-drag window"><section _ngcontent-myu-c13="" cdkdraghandle="" class="cdk-drag-handle header" style="touch-action: none; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; user-select: none;"><menu _ngcontent-myu-c13="" class="buttons"><li _ngcontent-myu-c13=""><a _ngcontent-myu-c13="" routerlink="/" href="/"><fa-icon _ngcontent-myu-c13="" class="ng-fa-icon button close"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-xmark" class="svg-inline--fa fa-circle-xmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"></path></svg></fa-icon></a></li><!----><li _ngcontent-myu-c13=""><a _ngcontent-myu-c13="" href="/notes"><fa-icon _ngcontent-myu-c13="" class="ng-fa-icon button back"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-chevron-left" class="svg-inline--fa fa-circle-chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256S114.6 512 256 512s256-114.6 256-256zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"></path></svg></fa-icon></a></li><!----><li _ngcontent-myu-c13=""><fa-icon _ngcontent-myu-c13="" class="ng-fa-icon button"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" class="svg-inline--fa fa-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"></path></svg></fa-icon></li><!----></menu><div _ngcontent-myu-c13="" class="filler"></div><span _ngcontent-myu-c13="" class="title">Notes</span><div _ngcontent-myu-c13="" class="filler"></div><div _ngcontent-myu-c13="" class="buttons"></div></section><main _ngcontent-myu-c13="" class="contents"><div _ngcontent-myu-c21="" class="notes"><!--scullyContent-begin--><ul _ngcontent-myu-c21="">
+<li _ngcontent-myu-c21=""><h2 id="cheatsheet-http" _ngcontent-myu-c21="">CheatSheet: http</h2>
+<hr _ngcontent-myu-c21="">
+<p _ngcontent-myu-c21="">  Hypertext Transfer Protocol is commonly used to transfer HTML and other media documents across web servers to internet browsers. It is a stateless protocol, so HTTP requires additional services to provide users a complete online experience.</p>
+<p _ngcontent-myu-c21="">  Detailed here are summarized descriptions of HTTP components.</p>
+</li>
+<li _ngcontent-myu-c21=""><h2 id="http-methods" _ngcontent-myu-c21="">HTTP Methods</h2>
+<hr _ngcontent-myu-c21="">
+<h3 id="connect" _ngcontent-myu-c21="">Connect</h3>
+<p _ngcontent-myu-c21="">  Starts a two-way connection with the host server. It can be used to open a tunnel.</p>
+<h3 id="delete" _ngcontent-myu-c21="">Delete</h3>
+<p _ngcontent-myu-c21="">  Deletes the specified resource.</p>
+<h3 id="get" _ngcontent-myu-c21="">Get</h3>
+<p _ngcontent-myu-c21="">  Requests a representaton of the resource. Requests should be used to request data and should not contain data. </p>
+<h3 id="head" _ngcontent-myu-c21="">HEAD</h3>
+<p _ngcontent-myu-c21="">  Requests the headers that would be returned if you were making a GET request instead.</p>
+<h3 id="options" _ngcontent-myu-c21="">OPTIONS</h3>
+<p _ngcontent-myu-c21="">  Requests a list of supported request methods.</p>
+<h3 id="patch" _ngcontent-myu-c21="">Patch</h3>
+<p _ngcontent-myu-c21="">  Request to modify the resource with the list of instructions.</p>
+<h3 id="post" _ngcontent-myu-c21="">POST</h3>
+<p _ngcontent-myu-c21="">  Send data to the server, successive identical requests may have additional effects like processing the request multiple times.</p>
+<h3 id="put" _ngcontent-myu-c21="">PUT</h3>
+<p _ngcontent-myu-c21="">  Creates a new resource or replaces the target resource with the new payload. Successive identical requests has the same effect, processing the request in a single way.</p>
+</li>
+<li _ngcontent-myu-c21=""><h2 id="1xx---informational" _ngcontent-myu-c21="">1XX - Informational</h2>
+<hr _ngcontent-myu-c21="">
+<p _ngcontent-myu-c21="">  [100] Continue</p>
+<p _ngcontent-myu-c21="">  [101] Switching protocols</p>
+<p _ngcontent-myu-c21="">  [102] Processing</p>
+</li>
+<li _ngcontent-myu-c21=""><h2 id="2xx-success" _ngcontent-myu-c21="">2XX Success</h2>
+<hr _ngcontent-myu-c21="">
+<p _ngcontent-myu-c21="">  [200] OK</p>
+<p _ngcontent-myu-c21="">  [201] Created</p>
+<p _ngcontent-myu-c21="">  [202] Accepted</p>
+<p _ngcontent-myu-c21="">  [203] Non-authoritative information</p>
+<p _ngcontent-myu-c21="">  [204] No content</p>
+<p _ngcontent-myu-c21="">  [205] Reset content</p>
+<p _ngcontent-myu-c21="">  [206] Partial content</p>
+</li>
+<li _ngcontent-myu-c21=""><h2 id="3xx-redirectional" _ngcontent-myu-c21="">3XX Redirectional</h2>
+<hr _ngcontent-myu-c21="">
+<p _ngcontent-myu-c21="">  [300] Multiple choices</p>
+<p _ngcontent-myu-c21="">  [301] Moved permanently</p>
+<p _ngcontent-myu-c21="">  [302] Found</p>
+<p _ngcontent-myu-c21="">  [305] Use proxy</p>
+<p _ngcontent-myu-c21="">  [307] Temporary redirect</p>
+<p _ngcontent-myu-c21="">  [308] Permanent redirect</p>
+</li>
+<li _ngcontent-myu-c21=""><h2 id="4xx-client-error" _ngcontent-myu-c21="">4XX Client error</h2>
+<hr _ngcontent-myu-c21="">
+<p _ngcontent-myu-c21="">  [400] Bad request</p>
+<p _ngcontent-myu-c21="">  [401] Unauthorized</p>
+<p _ngcontent-myu-c21="">  [403] Forbidden</p>
+<p _ngcontent-myu-c21="">  [404] Not found</p>
+<p _ngcontent-myu-c21="">  [405] Method not allowed</p>
+<p _ngcontent-myu-c21="">  [406] Not acceptable</p>
+<p _ngcontent-myu-c21="">  [407] Proxy authentication required</p>
+<p _ngcontent-myu-c21="">  [408] Request timeout</p>
+<p _ngcontent-myu-c21="">  [413] Payload too large</p>
+<p _ngcontent-myu-c21="">  [414] URI too long</p>
+<p _ngcontent-myu-c21="">  [415] Unsupported media type</p>
+<p _ngcontent-myu-c21="">  [418] I'm a teapot</p>
+<p _ngcontent-myu-c21="">  [423] Locked</p>
+<p _ngcontent-myu-c21="">  [429] Too many requests</p>
+<p _ngcontent-myu-c21="">  [451] Unavailable for legal reasons</p>
+</li>
+<li _ngcontent-myu-c21=""><h2 id="5xx-host-errors" _ngcontent-myu-c21="">5XX Host Errors</h2>
+<hr _ngcontent-myu-c21="">
+<p _ngcontent-myu-c21="">  [500] Internal server error</p>
+<p _ngcontent-myu-c21="">  [501] Not implemented</p>
+<p _ngcontent-myu-c21="">  [502] Bad gateway</p>
+<p _ngcontent-myu-c21="">  [503] Service unavailable</p>
+<p _ngcontent-myu-c21="">  [504] Gateway timeout</p>
+<p _ngcontent-myu-c21="">  [505] HTTP version not supported</p>
+<p _ngcontent-myu-c21="">  [507] Insufficient storage</p>
+<p _ngcontent-myu-c21="">  [511] Network authentication required</p>
+<p _ngcontent-myu-c21="">  [599] Network connect timeout error</p>
+</li>
+</ul>
+<!--scullyContent-end--><scully-content _ngcontent-myu-c21=""></scully-content><script>try {window['scullyContent'] = {cssId:"_ngcontent-myu-c21",html:document.body.innerHTML.split('<!--scullyContent-begin-->')[1].split('<!--scullyContent-end-->')[0]};} catch(e) {console.error('scully could not parse content');}</script></div></main></div><!----></app-window></app-notes-template><!----></app-root>
+<script id="ScullyIO-transfer-state"></script><script src="runtime.837d06a2c94db65b.js" type="module"></script><script src="polyfills.b7158d1cf2d8eaf8.js" type="module"></script><script src="main.5601dddc0084cbf7.js" type="module"></script>
+
+</body></html>
