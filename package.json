@@ -7,7 +7,8 @@
     "build": "ng build --configuration production && npx -- scully --scanRoutes",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "scully": "npx -- scully --scanRoutes"
+    "scully": "npx -- scully --scanRoutes",
+    "scully.watch": "npx -- scully --scanRoutes --watch"
   },
   "private": true,
   "dependencies": {

@@ -1,0 +1,19 @@
+{
+    "name": "DEV",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [1668],
+    "remoteUser": "node",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.profiles.linux": { "ash": { "path": "/bin/ash" }},
+                "terminal.integrated.defaultProfile.linux": "ash"
+            },
+            "extensions":[
+                "Angular.ng-template",
+                "syler.sass-indented"
+            ]
+        }
+    },
+    "postCreateCommand": "npm install"
+}
