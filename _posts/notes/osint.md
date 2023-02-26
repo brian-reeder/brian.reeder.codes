@@ -8,6 +8,16 @@ published: true
 	---
     When responding to security events or investigating abnormal behavior, it is a good idea to search for artifacts on public resources. These resources allow an threat hunter to determine an IP's public reputation, whether a file's hash is consistent with legitimate and officially distributed files, and other key details that can be used to scope an investigation.
 
+- ## IP Location
+	---
+    - IPLocation.Net [[LINK](https://www.iplocation.net/)]
+
+        IP address whois is checker that checks many IP geolocation databases at the same time.
+
+    - Geotraceroute [[LINK](https://geotraceroute.com/)]
+    
+        Determines a semi real-time ip address location by running a traceroute from a selected entrance node.
+
 - ## Reputation
 	---
     - AbuseIPDB [[LINK](https://www.abuseipdb.com/)]
@@ -29,13 +39,3 @@ published: true
     - VirusTotal [[LINK](https://www.virustotal.com/gui/home/upload)]
         
         Search for file hashes, IPs, and domains to determine vendor ratings, certificates, and other community reputation.
-
-- ## IP Location
-	---
-    - IPLocation.Net [[LINK](https://www.iplocation.net/)]
-
-        IP address whois is checker that checks many IP geolocation databases at the same time.
-
-    - Geotraceroute [[LINK](https://geotraceroute.com/)]
-    
-        Determines a semi real-time ip address location by running a traceroute from a selected entrance node.
